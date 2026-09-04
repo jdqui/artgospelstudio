@@ -28,20 +28,20 @@ export default function Res({ project }: Props) {
                 <p className='text-base lg:text-lg'> A rising supplement brand utilizing the body’s Gut-X Axis. Our collaboration with resbiotic ranges from social media materials to packaging designs and everything in between. With a minimalistic approach accompanied by striking vibrant colors, resbiotic were made to catch your eyes without being overwhelmed. </p>
             </article>
 
-            <section className='res-images flex flex-row gap-4 justify-center px-10 sm:px-30 lg:px-60 xl:px-80'>
+            <section className='res-images flex flex-row gap-4 justify-center w-full px-10 sm:px-30 lg:px-60 xl:px-80'>
                 <Image
                     src="/res-images/square-1.png"
                     alt="res sample image"
                     width={2332}
                     height={2384}
-                    className="w-full lg:max-w-[50%] h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/res-images/square-2.png"
                     alt="res products image"
                     width={2332}
                     height={2384}
-                    className="w-full lg:max-w-[50%] h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 

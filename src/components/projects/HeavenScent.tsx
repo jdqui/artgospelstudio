@@ -34,14 +34,14 @@ export default function HeavenScent({ project }: Props) {
                     alt="heavenscent sample image"
                     width={2332}
                     height={2384}
-                    className="w-full lg:max-w-[50%] h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/heavenscent-images/square-2.png"
                     alt="heavenscent products image"
                     width={2332}
                     height={2384}
-                    className="w-full lg:max-w-[50%] h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 
@@ -50,7 +50,7 @@ export default function HeavenScent({ project }: Props) {
                 <p className='text-base lg:text-lg'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
             </article>
 
-            <section className='heavenscent-packaging flex flex-col md:flex-row gap-4 justify-center px-10 sm:px-30 lg:px-60 xl:px-80'>
+            <section className='heavenscent-packaging grid grid-cols-3 gap-4 justify-center px-10 sm:px-30 lg:px-60 xl:px-80'>
                 <Image
                     src="/heavenscent-images/packaging-1.png"
                     alt="heavenscent packaging image"

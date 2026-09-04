@@ -34,14 +34,14 @@ export default function Mojo({ project }: Props) {
                     alt="mojo sample image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/mojo-images/square-2.png"
                     alt="mojo products image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 
@@ -121,14 +121,14 @@ export default function Mojo({ project }: Props) {
                     alt="mojo sample image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/mojo-images/square-4.png"
                     alt="mojo products image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 

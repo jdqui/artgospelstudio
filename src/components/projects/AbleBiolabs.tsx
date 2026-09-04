@@ -34,14 +34,14 @@ export default function AbleBiolabs({ project }: Props) {
                     alt="ablebiolabs branding image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/ablebiolabs-images/branding-2.png"
                     alt="ablebiolabs logo image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 
@@ -72,14 +72,14 @@ export default function AbleBiolabs({ project }: Props) {
                     alt="ablebiolabs branding image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                     />
                     <Image
                         src="/ablebiolabs-images/branding-4.png"
                         alt="ablebiolabs logo image"
                         width={2332}
                         height={2384}
-                        className="w-full h-auto object-contain rounded-2xl"
+                        className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                     />
                 </div>
                 <Image

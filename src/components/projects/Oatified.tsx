@@ -34,14 +34,14 @@ export default function Oatified({ project }: Props) {
                     alt="oatified branding image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/oatified-images/branding-2.png"
                     alt="oatified branding image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 
@@ -71,14 +71,14 @@ export default function Oatified({ project }: Props) {
                     alt="oatified packaging image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/oatified-images/packaging-2.png"
                     alt="oatified packaging image"
                     width={2332}
                     height={2384}
-                    className="w-full h-auto object-contain rounded-2xl"
+                    className="max-w-[50%] sm:w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 

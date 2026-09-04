@@ -5,6 +5,12 @@ import Button from "@/components/Button";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/homeData"
 
+export const metadata = {
+  title: "Projects & Case Studies | Art Gospel Studio",
+  description: "Explore our portfolio of branding, packaging, email design, and website design projects. See how we've helped B2B and DTC brands succeed.",
+  keywords: "design portfolio, case studies, branding projects, graphic design work, brand design examples",
+};
+
 export default function ProjectsPage() {
   return (
     <main>
@@ -13,6 +19,7 @@ export default function ProjectsPage() {
         </header>
 
         <section className="works-section flex flex-col  p-8 sm:p-10 lg:px-15 lg:py-15 xl:mx-15 xl:mx-25" aria-labelledby="works-heading">
+          <h1 id="works-heading" className="sr-only">Our Projects and Case Studies</h1>
 
           <ul className="works-grid grid md:grid-cols-2 lg:grid-cols-3 gap-12 list-none">
             {projects.map((project) => (

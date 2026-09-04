@@ -5,48 +5,44 @@ import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import Ticker from "@/components/Ticker";
 import Image from "next/image";
-import { projects, processSteps, personJsonLd, workedWithTicker, servicesTicker } from "@/data/homeData";
+import { projects, processSteps, workedWithTicker, servicesTicker } from "@/data/homeData";
 import ContactForm from "@/components/ContactForm";
+
+export const metadata = {
+  title: "Art Gospel Studio | Branding & Design",
+  description: "Branding, packaging, email design, and website design for B2B and DTC brands. Expert graphic design and creative direction by Alaine.",
+  keywords: "branding, graphic design, packaging design, email design, website design, creative direction, brand design, B2B design, DTC brands",
+  canonical: "https://artgospelstudio.com",
+};
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Art Gospel - Providing skills & ideas to help propel your brand</title>
-        <meta
-          name="description"
-          content="From brand identity to digital design, I craft visuals that tell stories and build connections. My expertise spans digital and print —bringing strategy and creativity together for impactful results."
-        />
         <link rel="canonical" href="https://artgospelstudio.com" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Art Gospel - Providing skills & ideas to help propel your brand" />
+        <meta property="og:title" content="Art Gospel Studio | Branding & Design" />
         <meta
           property="og:description"
-          content="Branding, packaging, email flows, and website design for B2B and DTC brands."
+          content="Branding, packaging, email design, and website design for B2B and DTC brands."
         />
-        <meta property="og:image" content="https://yourdomain.com/og-image.png" />
         <meta property="og:url" content="https://artgospelstudio.com" />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Art Gospel - Providing skills & ideas to help propel your brand" />
+        <meta name="twitter:title" content="Art Gospel Studio | Branding & Design" />
         <meta
           name="twitter:description"
-          content="Branding, packaging, email flows, and website design for B2B and DTC brands."
-        />
-        <meta name="twitter:image" content="https://yourdomain.com/og-image.png" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+          content="Branding, packaging, email design, and website design for B2B and DTC brands."
         />
       </Head>
 
       <main className="homepage w-full h-full flex flex-col gap-4 md:gap-10 xl:gap-20">
         <header className="head min-h-[50vh] xl:min-h-screen bg-[url(/artgospel-hero.png)] bg-cover bg-center">
           <Header />
+          <h1 className="sr-only">Art Gospel Studio - Branding and Graphic Design Services</h1>
         </header>
 
         <section className="works-section flex flex-col p-8 sm:p-10 lg:px-15 lg:py-15 xl:mx-15 xl:mx-25" aria-labelledby="works-heading">
