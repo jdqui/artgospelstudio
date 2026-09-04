@@ -72,7 +72,7 @@ export default function Home() {
         </section>
 
         <section
-          className="worked-with flex flex-col text-center justify-center bg-[var(--secondary-background)] gap-6 sm:gap-8 px-10 py-10 lg:px-15 lg:py-15 xl:mx-15 xl:mx-25"
+          className="worked-with flex flex-col text-center justify-center bg-[var(--secondary-background)] gap-6 sm:gap-8 px-10 py-10 lg:px-15 lg:py-15"
           aria-labelledby="worked-with-heading"
         >
           <h3 id="worked-with-heading" className="text-base sm:text-xl text-[var(--quinary-font-color)]"> We've worked with </h3>
@@ -187,7 +187,7 @@ export default function Home() {
         </section>
 
         <section
-          className="about-section flex flex-col bg-[var(--secondary-background)] text-[var(--quarternary-font-color)] gap-8 sm:gap-10 p-8 sm:p-10 lg:px-15 lg:py-15 xl:mx-15 xl:mx-25 text-center items-center"
+          className="about-section flex flex-col bg-[var(--secondary-background)] text-[var(--quarternary-font-color)] gap-8 sm:gap-10 p-8 sm:p-10 lg:p-15 xl:p-25 text-center items-center"
           aria-labelledby="about-heading"
         >
           <Image
