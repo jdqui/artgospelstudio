@@ -45,7 +45,7 @@ export default function Home() {
       </Head>
 
       <main className="homepage w-full h-full flex flex-col gap-4 md:gap-10 xl:gap-20">
-        <header className="head min-h-[50vh] xl:min-h-screen bg-[url('/artgospel-hero.png')] bg-cover bg-center">
+        <header className="head min-h-[50vh] xl:min-h-screen bg-[url(/artgospel-hero.png)] bg-cover bg-center">
           <Header />
         </header>
 
