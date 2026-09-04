@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Carousel from '@/components/Carousel';
 
 import type { Project } from '@/data/homeData';
+import ProjectNav from '../ProjectNav';
 
 type Props = {
     project: Project;
@@ -35,6 +36,8 @@ export default function Plukkers({ project }: Props) {
                 />
             </section>
             
+            <ProjectNav currentSlug={project.slug} />
+
             <footer>
                 <Footer/>
             </footer>

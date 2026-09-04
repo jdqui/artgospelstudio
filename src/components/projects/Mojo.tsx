@@ -6,6 +6,7 @@ import Image from 'next/image';
 import type { Project } from '@/data/homeData';
 import { mojoSocmedAdTicker, resSocmedAdTicker } from '@/data/homeData';
 import Carousel from '../Carousel';
+import ProjectNav from '../ProjectNav';
 
 type Props = {
     project: Project;
@@ -33,14 +34,14 @@ export default function Mojo({ project }: Props) {
                     alt="mojo sample image"
                     width={2332}
                     height={2384}
-                    className="w-full lg:max-w-[50%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/mojo-images/square-2.png"
                     alt="mojo products image"
                     width={2332}
                     height={2384}
-                    className="w-full lg:max-w-[50%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 
@@ -55,28 +56,28 @@ export default function Mojo({ project }: Props) {
                     alt="mojo packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/mojo-images/packaging-2.png"
                     alt="mojo packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/mojo-images/packaging-3.png"
                     alt="mojo packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/mojo-images/packaging-4.png"
                     alt="mojo packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 
@@ -120,16 +121,18 @@ export default function Mojo({ project }: Props) {
                     alt="mojo sample image"
                     width={2332}
                     height={2384}
-                    className="w-full lg:max-w-[50%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/mojo-images/square-4.png"
                     alt="mojo products image"
                     width={2332}
                     height={2384}
-                    className="w-full lg:max-w-[50%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
             </section>
+
+            <ProjectNav currentSlug={project.slug} />
 
             <footer>
                 <Footer/>

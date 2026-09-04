@@ -6,6 +6,7 @@ import Image from 'next/image';
 import type { Project } from '@/data/homeData';
 import { resSocmedAdTicker } from '@/data/homeData';
 import Carousel from '../Carousel';
+import ProjectNav from '../ProjectNav';
 
 type Props = {
     project: Project;
@@ -55,28 +56,28 @@ export default function Res({ project }: Props) {
                     alt="res packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/res-images/packaging-2.png"
                     alt="res packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/res-images/packaging-3.png"
                     alt="res packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/res-images/packaging-4.png"
                     alt="res packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 
@@ -123,6 +124,8 @@ export default function Res({ project }: Props) {
                     ]}
                 />
             </section>
+
+            <ProjectNav currentSlug={project.slug} />
 
             <footer>
                 <Footer/>

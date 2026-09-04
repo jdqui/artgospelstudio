@@ -6,6 +6,7 @@ import Image from 'next/image';
 import type { Project } from '@/data/homeData';
 import { heavenscentSocmedAdTicker } from '@/data/homeData';
 import Carousel from '../Carousel';
+import ProjectNav from '../ProjectNav';
 
 type Props = {
     project: Project;
@@ -55,21 +56,21 @@ export default function HeavenScent({ project }: Props) {
                     alt="heavenscent packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/heavenscent-images/packaging-2.png"
                     alt="heavenscent packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
                 <Image
                     src="/heavenscent-images/packaging-3.png"
                     alt="heavenscent packaging image"
                     width={1125}
                     height={1125}
-                    className="w-full lg:max-w-[25%] h-auto object-contain rounded-2xl"
+                    className="w-full h-auto object-contain rounded-2xl"
                 />
             </section>
 
@@ -106,6 +107,8 @@ export default function HeavenScent({ project }: Props) {
                     ))}
                 </Ticker>
             </section>
+
+            <ProjectNav currentSlug={project.slug} />
 
             <footer>
                 <Footer/>

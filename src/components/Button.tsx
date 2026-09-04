@@ -6,7 +6,7 @@ import React, { useState, useCallback } from "react";
 type BaseProps = {
   children: React.ReactNode;
   className?: string;
-  variant?: "solid" | "ghost";
+  variant?: "solid" | "ghost" | "icon";
   copyText?: string;
   copiedLabel?: React.ReactNode;
 };
@@ -35,13 +35,18 @@ export default function Button({
 }: ButtonProps) {
   const [copied, setCopied] = useState(false);
 
-  const baseClasses =
-    "inline-flex justify-center items-center text-sm sm:text-base lg:text-lg rounded-md px-4 lg:px-8 py-1 lg:py-2 transition-colors";
+  // no display utility here anymore — each variant/usage sets its own
+  const baseClasses = "justify-center items-center text-sm sm:text-base lg:text-lg transition-colors";
+
   const solidClasses =
-    "bg-[var(--primary-color)] text-white hover:bg-[var(--primary-accent)]";
+    "inline-flex rounded-md px-4 lg:px-8 py-1 lg:py-2 bg-[var(--primary-color)] text-white hover:bg-[var(--primary-accent)]";
   const ghostClasses =
-    "text-[var(--primary-font-color)] hover:text-[var(--tertiary-font-color)]";
-  const variantClasses = variant === "solid" ? solidClasses : ghostClasses;
+    "inline-flex rounded-md px-4 lg:px-8 py-1 lg:py-2 text-[var(--primary-font-color)] hover:text-[var(--tertiary-font-color)]";
+  // icon: no display/shape baked in — caller controls layout (flex/flex-col/etc) via className
+  const iconClasses = "text-[var(--primary-font-color)] hover:text-[var(--tertiary-font-color)]";
+
+  const variantClasses =
+    variant === "solid" ? solidClasses : variant === "ghost" ? ghostClasses : iconClasses;
   const combinedClasses = `${baseClasses} ${variantClasses} ${className}`;
 
   const handleCopyClick = useCallback(

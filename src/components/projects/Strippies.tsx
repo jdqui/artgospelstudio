@@ -6,6 +6,7 @@ import Image from 'next/image';
 import type { Project } from '@/data/homeData';
 import { strippiesSocmedAdTicker } from '@/data/homeData';
 import Carousel from '../Carousel';
+import ProjectNav from '../ProjectNav';
 
 type Props = {
     project: Project;
@@ -76,6 +77,8 @@ export default function Strippies({ project }: Props) {
                     />
                 </div>
             </section>
+
+            <ProjectNav currentSlug={project.slug} />
 
             <footer>
                 <Footer/>
