@@ -35,14 +35,11 @@ export default function Button({
 }: ButtonProps) {
   const [copied, setCopied] = useState(false);
 
-  // no display utility here anymore — each variant/usage sets its own
-  const baseClasses = "justify-center items-center text-sm sm:text-base lg:text-lg transition-colors";
-
+  const baseClasses = "justify-center items-center text-sm sm:text-base lg:text-lg transition-colors leading-none";
   const solidClasses =
-    "inline-flex rounded-md px-4 lg:px-8 py-1 lg:py-2 bg-[var(--primary-color)] text-white hover:bg-[var(--primary-accent)]";
+    "inline-flex rounded-md p-2 lg:p-3 bg-[var(--primary-color)] text-white hover:bg-[var(--primary-accent)]";
   const ghostClasses =
-    "inline-flex rounded-md px-4 lg:px-8 py-1 lg:py-2 text-[var(--primary-font-color)] hover:text-[var(--tertiary-font-color)]";
-  // icon: no display/shape baked in — caller controls layout (flex/flex-col/etc) via className
+    "inline-flex rounded-md p-2 lg:p-3 text-[var(--primary-font-color)] hover:text-[var(--tertiary-font-color)]";
   const iconClasses = "text-[var(--primary-font-color)] hover:text-[var(--tertiary-font-color)]";
 
   const variantClasses =

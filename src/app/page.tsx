@@ -68,12 +68,12 @@ export default function Home() {
         </section>
 
         <section
-          className="worked-with flex flex-col text-center justify-center bg-[var(--secondary-background)] gap-6 sm:gap-8 px-10 py-10 lg:px-15 lg:py-15"
+          className="worked-with flex flex-col text-center justify-center bg-[var(--secondary-background)] gap-6 sm:gap-8 py-10 lg:px-15 lg:py-15"
           aria-labelledby="worked-with-heading"
         >
           <h3 id="worked-with-heading" className="text-base sm:text-xl text-[var(--quinary-font-color)]"> We've worked with </h3>
           
-          <Ticker speed="slow" pauseOnHover={true} >
+          <Ticker speed="slow" mobileSpeed="slower" pauseOnHover={true} mobileEdgeFade={false} >
             {[...workedWithTicker, ...workedWithTicker, ...workedWithTicker].map((logo, index) => (
               <div 
                 key={`${logo.id}-${index}`}
@@ -183,7 +183,7 @@ export default function Home() {
         </section>
 
         <section
-          className="about-section flex flex-col bg-[var(--secondary-background)] text-[var(--quarternary-font-color)] gap-8 sm:gap-10 p-8 sm:p-10 lg:p-15 xl:p-25 text-center items-center"
+        className="about-section flex flex-col bg-[var(--secondary-background)] text-[var(--quarternary-font-color)] gap-8 sm:gap-10 p-8 sm:p-10 lg:p-15 xl:py-25 xl:px-45 text-center items-center"
           aria-labelledby="about-heading"
         >
           <Image
@@ -197,7 +197,7 @@ export default function Home() {
             ( INTRODUCTION )
           </h3>
           <h2 id="about-heading" className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl/20"> Senior Graphic Designer and Illustrator helping brands bridge the gap between business and design. </h2>
-          <p className="text-md lg:text-lg lg:w-5/8">
+          <p className="text-md lg:text-lg lg:w-3/4">
             Hey, I'm Alaine! A designer and illustrator based in the Philippines, I help B2B and DTC brands turn ideas into visuals that tell stories, build connections, and drive results. With a thoughtful and strategic approach, I craft designs that give brands the clarity and confidence to take their next big step.
           </p>
           <Button href="#connect" variant="solid"> Let's work together </Button>
@@ -217,7 +217,7 @@ export default function Home() {
           <div className=" flex flex-col items-start gap-7 w-full lg:w-2/5">
             <h2 id="connect-heading" className="text-5xl sm:text-6xl xl:text-7xl text-[var(--primary-font-color)]"> Think we'll make a great fit? </h2>
             <p className="text-md lg:text-lg text-[var(--primary-font-color)]"> Let's create something great together! Schedule a call, drop me a message, or fill out the form—I'd love to hear about your project. </p>
-            <Button copyText="alaine.artist@gmail.com" variant="ghost" className="gap-3 !p-0">
+            <Button copyText="info@artgospelstudio.com" variant="ghost" className="gap-3 !p-0">
               <Image
                 src="/email.svg"
                 alt="Prefer to chat through email? Copy here."
@@ -225,7 +225,7 @@ export default function Home() {
                 height={30}
                 className="w-5 lg:w-6"
               />
-              <p className="text-sm xl:text-lg justify-start">Prefer to chat through email? Copy here.</p>
+              <p className="text-sm xl:text-lg justify-start hover:cursor-pointer">Prefer to chat through email? Copy here.</p>
             </Button>
           </div>
           <div className="form flex w-full lg:w-1/2 xl:w-2/5 ml-auto">
