@@ -138,7 +138,7 @@ export default function Home() {
           className="process-section flex flex-col lg:flex-row p-8 sm:p-10 lg:px-15 lg:py-15 xl:mx-15 xl:mx-25 rounded-3xl overflow-hidden"
           aria-labelledby="process-heading"
         >
-        <div className="process-image relative w-full lg:w-1/3 aspect-[1/1] lg:aspect-auto rounded-t-3xl lg:rounded-t-none lg:rounded-tl-3xl lg:rounded-b-3xl border border-[var(--secondary-accent)] overflow-hidden">
+        <div className="process-image relative w-full lg:w-1/3 aspect-[1/1] lg:aspect-auto rounded-t-3xl lg:rounded-t-none lg:rounded-tl-3xl lg:rounded-bl-3xl border border-[var(--secondary-accent)] overflow-hidden">
           <Image
             src="/process-section.png"
             alt="MOJO promotional material."
